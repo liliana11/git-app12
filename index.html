@@ -1,0 +1,701 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>app 10 Cuidemos el planeta</title>
+
+
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<link rel="stylesheet" href="css/tema-app10.min.css">
+ <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ 
+ <!--grupo JavaScript-->
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <script src="phonegap.js"></script>
+ <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+ 
+
+</head>
+ 
+ <body onLoad="MM_preloadImages('imagenes/matar.jpg','imagenes/calentamiento-global.png','imagenes/Contaminaciohn.png','imagenes/d5811456e16c90d3bf71a8fdaebf840b.png','imagenes/biodiversidad.jpg','imagenes/importanci.jpg','imagenes/tierra-5.jpg','imagenes/biodivefrsida varios.jpg','imagenes/DIVERSIDAD_-BIOLOGICA.jpg','imagenes/semcra.jpg','imagenes/incendio.jpg','imagenes/nucle.jpg','imagenes/recicla.png','imagenes/agua.jpg','imagenes/petroleo.jpg')">
+ 
+ 
+    <div data-role="page" id="principal" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-add-back-btn-text="Regresar"  data-back-btn-theme="b">
+       <h1>CUIDEMOS AL PLANETA TIERRA</h1>
+        </div>
+      
+       <div>
+        <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+        <li class="ui-first-child ui-last-child">
+            <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>PLANETA TIERRA</h2>
+            </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+              <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                 <h2>BIODIVERSIDAD</h2>
+              </a>
+             </li>
+             <li class="ui-first-child ui-last-child">
+                 <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <h2>CONCIENCIA ECOLÓGICA</h2>
+                 </a> 
+                </li>
+                <li class="ui-first-child ui-last-child">
+                    <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                      <h2>CONTAMINACIÓN</h2>
+                    </a>
+                 </li>
+                 <li class="ui-first-child ui-last-child">
+                    <a href="#Pagina5" class=" ui-btn ui-btn-icon-right ui-icon-carat-r">
+                       <h2>RECURSOS RENOVABLES</h2>
+                    </a>
+                  </li>
+                  
+                  
+                   <li class="ui-first-child ui-last-child">
+                    <a href="#Pagina6" class=" ui-btn ui-btn-icon-right ui-icon-carat-r">
+                       <h2>DATOS DEL DESARROLLADOR</h2>
+                    </a>
+                  </li>
+                   </ul>
+                </div>
+                <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+                    <div>
+                      <h4>Cuidemos al Planeta</h4>
+                       <div><img src="res/android/mdpi.png" width="46" height="46"> </div>
+                      <h4> Liliana Hernandez Ramos</h4>
+                     </div>
+                    </div>
+                   </div>
+                   
+                   
+                    <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+                     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+                      <h1>El cuidado del planeta</h1>
+                      </div>
+                      
+                      <div data-role="content" align="center">
+                       <div data-role="collapsible" data-content-theme="false">
+                       <h1>¿Qué es el Planeta Tierra?</h1> 
+                       <h1 align="center">Planeta Tierra</h1>
+                       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('1','','imagenes/biodiversidad.jpg',1)"><img src="imagenes/tierra-5.jpg" width="50%" height="50%" id="1"></a>
+<p align="justify">La Tierra es el hogar de los seres vivos y se formó hace más de 4,500 millones de años. Es el quinto planeta más grande del Sistema Solar y el tercero más cercano al Sol; su distancia promedio a éste es de unos 149’597,890 kilómetros o prácticamente 150 millones de kilómetros. Como otros planetas, presenta una forma esférica y ligeramente achatada en los polos. Su diámetro es apenas un poco más grande que el de Venus. Es un planeta sin anillos pero con un satélite natural, la Luna.
+                      Aunque normalmente se le representa como una esfera en posición vertical, su eje está ligeramente inclinado a unos 23.45°. La consecuencia de esta inclinación son las estaciones: primavera, verano, otoño e invierno pues durante una parte del año el hemisferio norte se inclina hacia el Sol por lo que en el norte es verano y en el sur es invierno. Durante la otra mitad del año esta situación se invierte.
+                      La Tierra orbita alrededor del Sol, la estrella que provee el nivel de luz y calor ideales para la vida. En términos básicos, el planeta experimenta dos movimientos: rotación y traslación. El primero es efectuado alrededor del eje polar en el sentido contrario al de las manecillas del reloj, es decir, de oeste a este. El movimiento de traslación es el que realiza alrededor del Sol en una órbita casi circular.
+Un día en la Tierra tiene una duración de 24 horas, pero si se trata de ser muy específicos, la NASA estima esta duración en 23.934 horas o 0.99726968 días terrestres. Esto es el período de rotación sideral. Ahora bien, 1 año terrestre dura 365.26 días, el tiempo que tarda en recorrer una órbita completa alrededor del Sol.
+Los movimientos de la Tierra y las condiciones en que se encuentra en el Sistema Solar inciden en una serie de fenómenos increíbles y naturales: erupciones volcánicas, tormentas, terremotos, estaciones, eclipses, mareas y muchas más. Es un planeta tremendamente activo y en constante cambio.</p>
+
+                       <h1 align="center">Características</h1>
+                       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('2','','imagenes/importanci.jpg',1)"><img src="imagenes/estru.jpg" width="50%" height="50%" id="2"></a>
+<p align="justify"> Diámetro: 12,756 km.</p>
+<p align="justify">Masa: 5.9722 x 1024 kg.</p>
+<p align="justify">Densidad: 5.513 g/cm3.</p>
+<p align="justify">Volumen: 1,083,206,916,846 km3.</p>
+<p align="justify">Temperatura mínima/máxima: -88°/58° centígrados.</p> 
+
+<h1 align="center">Estructura geológica de la Tierra</h1>
+<img src="imagenes/estru.jpg" width="50%" height="50%" id="2"></a>
+<p align="justify"> Es un planeta rocoso con una superficie sólida que a su vez está caracterizada por la presencia de numerosas formaciones geológicas: montañas, mesetas, cañones, llanuras, valles, etcétera. La zona inferior de la Tierra se compone de varias capas de roca y metal; mientras mayor es la profundidad, mayores son las temperaturas.
+La estructura terrestre está compuesta por 3 capas: corteza, manto y núcleo. La corteza es la capa más delgada y superficial, en cuyo exterior se encuentran sedimentos. El manto es la capa bajo la corteza y está formado por densas rocas. Representa cerca del 83 por ciento del volumen de la Tierra. El núcleo, por su parte, es la capa más profunda y al parecer contiene hierro, níquel y azufre.
+El núcleo es el origen del campo magnético terrestre, el cual puede ser distorsionado por el viento solar (partículas con carga que el Sol expulsa de forma continua). Si las moléculas quedan atrapadas en el campo magnético, chocan con moléculas de aire en los polos, produciéndose así las bellísimas auroras boreales y auroras australes.</p> 
+                       </div>
+                      </div>
+                       <div data-role="content" align="center">
+                       <div data-role="collapsible" data-content-theme="false">
+                      <h1>Importancia de su cuidado</h1> 
+                      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/biodiversidad.jpg',1)"><img src="imagenes/importanci.jpg" width="50%" height="50%" id="Image15"></a>
+<h1 align="center">Importancia de cuidar la tierra</h1>  
+            <p align="justify">La importancia de cuidar la tierra es de gran utilidad para los seres humanos ya que si no ponemos de nuestro empeño para ello la tierra podría que dar en un estado de solo arena y sin agua y lo cual no podremos volver a tomar agua cuando tengamos sed de beber.
+por qué nos va a pesar no haber cuidado lo que teníamos y saberlo valorar es por ello que debemos a prender a cuidar la tierra para un mejor futuro y no arrepentirnos y hacer que nuestros hijos que vienen en camino sufran por lo que nosotros causamos.Muchas veces no somos conscientes de la importancia del cuidado del medio ambiente. Sin embargo, en los últimos años, la humanidad fue descubriendo la relevancia de esta problemática que afecta nuestra salud. Tal es así que, en 1970, el senador estadounidense Gaylord Nelson, preocupado por el impacto de la humanidad sobre la naturaleza, impulsó la creación del Día Mundial de la Tierra y hoy ya se extendió a casi 200 países, con millones de personas que lo celebran en todo el mundo.
+La contaminación no es un tema menor. Es la causante de enfermedades relacionadas con el aparato respiratorio como la neumonía o la bronquitis. También provoca tos, cansancio, falta de aliento, irritación en la nariz, los ojos y la garganta. Y lo más preocupante es que la cifra de muertos por esta causa asciende a 7 millones de personas en todo el mundo. Irónicamente, la única responsable de la contaminación del aire es la actividad humana, concretamente el tráfico rodado en las ciudades.
+ La tierra es nuestro hogar y si no lo cuidamos podemos destruirlo, que si no cuidamos la tierra y la destejeremos de las industrias la naturaleza se podria marchitar y los animales morirían, si no se tiene cuidado sobre ella poco a poco perecería los campos se marchitarían, habitan muchos cambios climáticos repentinos, es importante cuidar a la tierra porque si le llegara a suceder algo no podríamos vivir como ejemplo: una guerra devastaría ciudades completas y cobraría vida de animales arboles y personas que a largo plazo extendería la contaminación. La contaminación mata lentamente al planeta ya sea por agua tierra y aire y si no se limpian los desechos esa misma contaminación se extiende y se hace mas y mas grande cobrando vidas y haciendo fuertes repercusiones como los tsunamis el granizo en las ciudades en las cuales nunca granizo
+</p>
+                      </div>
+                      </div>
+                     <div data-role="content" align="center">
+                 <div data-role="collapsible" data-content-theme="false">
+                 <h1>Día internacional de la Tierra</h1>
+                 <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','imagenes/tierra-5.jpg',1)"><img src="imagenes/Dia-de-la-tierra.jpg" width="50%" height="50%" id="Image16"></a>
+<h1>22 de abril Día Internacional de la Tierra</h1>
+                 <p align="justify">El 22 de abril se celebra el Día Internacional de la Tierra. Se instauró para crear una conciencia común a los problemas medioambientales como la superpoblación, la producción de contaminación o la conservación de la biodiversidad. Su objetivo es subrayar la importancia del uso responsable de los recursos naturales de la Tierra  así como  de una educación ambiental.
+
+El 22 de abril de 1970, el senador y activista ambiental Gaylord Nelson realizó la primera manifestación en favor de la creación de una agencia ambiental. Participaron miles de universidades, escuelas primarias y secundarias, además de cientos de comunidades. La presión social tuvo sus logros y el gobierno de Estados Unidos creó la Agencia de Protección Ambiental (Environmental Protection Agency) y proclamó una serie de leyes destinadas a la protección del medio ambiente.
+
+Las Naciones Unidas reconocen que la Tierra y sus ecosistemas son el hogar de la humanidad. Asimismo, afirman que para alcanzar un justo equilibrio entre las necesidades económicas, sociales y ambientales de las generaciones presentes y futuras es necesario promover la armonía con la naturaleza y la Tierra. Es por esto que se decidió designar el 22 de Abril como el “Día Internacional de la Madre Tierra”.
+Celebramos el Día Internacional de la Madre Tierra para recordar que el planeta y sus ecosistemas nos dan la vida y el sustento.
+
+Con esta celebración admitimos la responsabilidad colectiva, como nos recordaba la Declaración de Río de 1992, de fomentar la harmonía con la naturaleza y la Madre Tierra para alcanzar el equilibrio justo entre las necesidades económicas, sociales y medioambientales de las generaciones presentes y futuras.
+
+Este día nos brinda la oportunidad de concienciar a todos los habitantes del planeta acerca de los problemas que afectan a la Tierra y a las diferentes formas de vida que en él se desarrollan.
+
+En 2017, la campaña se denomina «Alfabetización medioambiental y climática».
+
+La educación constituye los cimientos del progreso. Necesitamos que
+ la ciudadanía mundial conozca los conceptos sobre el cambio climático y sea consciente de la amenaza sin precedentes para el planeta. El conocimiento nos empoderará a todos y nos llevará a tomar medidas para defender el medio ambiente.
+
+La alfabetización medioambiental y climática no es solo el motor que genera votantes concienciados por las cuestiones ecológicas y promueve legislación en este ámbito, sino que también acelera el desarrollo de tecnologías y empleos respetuosos con el medio ambiente.
+                                      </p>
+                       
+                       <h1>Como celebrar este día</h1>
+                       <p align="justify">Para aquellos cuya conciencia ecologista se pronuncia el 22 de abril, Día de la Tierra, Rogers anima a establecer  un compromiso público para realizar una acción relacionada con el medio ambiente.
+
+Comprometerse con ideas promovidas por la plataforma el Día de la Tierra incluyen la promesa de educar a sus amigos y familiares sobre el calentamiento global o comprar productos ecológicos como bombillas para el ahorro de energía.
+
+Los compromisos son parte de una iniciativa de un año de duración llamado la Generación Verde, que conduce hasta el 40 º aniversario del Día de la Tierra en 2010.
+
+De acuerdo con Rogers, todos son parte de esta generación, que marca la transición de la revolución industrial a la revolución verde.
+
+"También se trata de la generación de energía verde y la generación de empleos verdes. ... Cada vez que mencionas “Generación Verde”, la gente sabe a qué ideas te estás refiriendo, y eso es exactamente lo que queremos".
+1.Tener que hablar a la gente sobre los beneficios de las energías renovables, y lo malas que son las energías fósiles para nuestro mundo.
+2.Aconsejar a todos que por un día, desconecten su conexión a internet y que apenas gasten electricidad.
+3. Otra idea es plantar un árbol. E invitar a vuestros amigos a hacer lo mismo.
+4.Enseñar a los niños a apreciar y a cuidar a la naturaleza. Y sobre la importancia de la biodiversidad.
+5.Juega con los niños en la calle. Aprovecha este día para enseñarles por ejemplo la importancia de cuidar del medio ambiente pero no desde casa, o desde un ordenador.
+6.Decir a esa persona que ha arrojado basura en la calle, que la levante y la tire en el contenedor de la basura.
+7.Reciclar, y alentar a vuestros amigos también a que lo hagan. Que sepáis  qué es biodegradable y qué no lo es.
+8.No utilicéis bolsas de plástico, y si se tienen que usar, lo mejor es reciclarlas. Podéis utilizar las que os dan en los comercios como bolsas de residuos. Se pueden difundir estas ideas entre vuestros  amigos. Miles de animales os lo van a agradecer.
+9.Se puede difundir entre quienes no lo saben, qué es el calentamiento global, y qué asociación tiene con el cambio climático.
+10.Aprovecha para hacer algo de limpieza social. En este día, algunas organizaciones se dedican a proponer distintos lugares que necesitan una limpieza pero están abandonados.
+11.Calcula tu huella de Carbono. Con la ayuda de un calculador de carbono podrás conocer cuál es tu contribución personal al calentamiento global y de este modo, poner remedio y reducir tu propia contaminación.
+12.También se pueden explicar a vuestros amigos qué son los gases de efecto invernadero, y cómo afectan a nuestro planeta produciendo el calentamiento del planeta.
+13.Siempre que se pueda, se ha de evitar utilizar transportes que contaminen. Es mejor utilizar la bicicleta para ir a lugares cercanos, y si para los más cercanos, caminando.
+14.También puedes optar por cambiar tus productos de limpieza ya que estos cuentan con un buen número de componentes químicos, de modo que quizás ha llegado el momento de empezar a hacer tus propios productos de limpieza, y con ello que seas capaz de contaminar menos.
+15.Comparte en redes sociales o a través de otros medios, tu “selfie” por el día Mundial de la Tierra.Seguro que en un día como este te apetecerá poder hacer fotos de todo aquello que hagas. Ahora es el mejor momento de todos para hacerte el “selfie” de rigor.
+Comienza a pensar en cambiar a un coche eléctrico. </p>
+
+ 
+                    </div>
+                    </div>
+                      
+                      
+  <div data-role="main" class="ui-content" align="center">
+  <div style="width:30%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://www.vitalis.net/diadelatierra/" data-role="button" id="beep" target="_self">
+  <h2>Más información</h2>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+
+  
+                      <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+                        <h4>Cuidemos al Planeta</h4>
+                        <img src="res/android/mdpi.png" width="46" height="46">
+                            <h4>Liliana Hernandez Ramos</h4>
+                        </div>
+                       </div>
+                      </div>
+                      
+                         
+                         <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+                          <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+                           <h1>El cuidado de la biodiversidad</h1>
+                           </div>
+                          <div data-role="content" align="center">
+                          <div data-role="collapsible" data-content-theme="false">
+                          <h1>¿Qué es la Biodiversidad?</h1>
+                          <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/biodivefrsida varios.jpg',1)"><img src="imagenes/Biodiversidad-300x179.jpg" width="50%" height="50%" id="Image17"></a>
+<h1>Biodiversidad</h1>
+                           <p align="justify">El término biodiversidad es una contracción de la expresión “diversidad biológica”. La biodiversidad refleja el número, la variedad y la variabilidad de los organismos vivos y cómo éstos cambian de un lugar a otro y con el paso del tiempo. Incluye la diversidad dentro de las especies (diversidad genética), entre especies (diversidad de las especies) y entre ecosistemas (diversidad de los ecosistemas).
+La biodiversidad es importante para todos los ecosistemas; no sólo para los "naturales", como los parques nacionales o las reservas naturales, sino también para los controlados por el hombre, como las granjas, las plantaciones y hasta los parques urbanos. La biodiversidad constituye la base de múltiples beneficios que los ecosistemas proporcionan al hombre.
+A pesar de las herramientas y fuentes de información con las que se cuenta, es difícil medir la biodiversidad con precisión. Sin embargo, pocas veces se necesitan respuestas precisas para comprender lo necesario sobre la biodiversidad, cómo está cambiando o las causas y consecuencias de dicho cambio.
+Para medir los diferentes aspectos de la biodiversidad, se utilizan diversos indicadores ecológicos, como el número de especies que se encuentran en un área determinada. Estos indicadores son esenciales para el seguimiento, la evaluación y los procesos decisorios. Están concebidos para transmitir información a los responsables políticos de forma rápida y fácil. Sin embargo, ningún indicador es capaz de recoger por sí solo todos los aspectos de la biodiversidad.</p>
+                           <h1>¿Dónde se encuentra la biodiversidad?</h1>
+                           <p align="justify">La vida y, por lo tanto, la biodiversidad, está presente a lo largo y ancho de la superficie de la Tierra y en todas y cada una de las gotas que se encuentran en sus aguas. Poca gente es consciente de esto, ya que la mayoría de los organismos son pequeños o invisibles a simple vista. Además, muchos son raros, viven poco tiempo o permanecen ocultos.
+No es fácil describir la biodiversidad. Su aspecto más conocido es la clasificación de especies de animales y plantas, que se centra sobre todo en los animales observables a simple vista, los ecosistemas templados y los elementos de interés para el hombre. Se calcula que en la tierra hay entre 5 y 30 millones de especies. Sin embargo, hasta el momento, sólo se han identificado entre 1,7 y 2 millones. Para subsanar esta deficiencia es imprescindible contar con inventarios más completos. Más en inglés…
+1.2.1 Aunque la información disponible no ofrece con frecuencia una visión precisa de la amplitud y distribución de todos los componentes de la biodiversidad, sí proporciona aproximaciones de gran utilidad. Por ejemplo, se dispone de información útil sobre la distribución de especies en determinadas zonas, como en las regiones templadas de Norteamérica, Europa y Asia; por ejemplo, de algunos pájaros y mamíferos. Los indicadores pueden utilizarse como complemento a estas informaciones. Los biomas son comunidades ecológicas de organismos, relacionadas con unas condiciones climáticas y geográficas determinadas; por ejemplo, los desiertos, las praderas y los bosques tropicales húmedos. Su estudio puede proporcionar una visión de conjunto de las diferentes funciones ecológicas dentro de una comunidad y de su diversidad biológica.
+ Mapa de los diferentes biomas
+Mapa de los diferentes biomas
+[en] 
+ Riqueza de especies 
+                                            en diferentes biomas
+Riqueza de especies en diferentes biomas [en]
+La Tierra puede dividirse también en ocho reinos biogeográficos que, a grandes rasgos, comparten una evolución biológica similar. Existen diferencias notables en la composición de especies entre los diferentes reinos. Más en inglés…
+1.2.2 Se pueden hacer cálculos aproximados del ritmo de extinción de las especies, basados en el conocimiento actual sobre la evolución de la biodiversidad en el tiempo. La historia de la vida está marcada por cambios considerables. Los fósiles permiten calcular el ritmo de extinción de especies que fueron lo suficientemente abundantes y grandes como para dejar fósiles. El ritmo actual de extinción se analiza en la Pregunta 3.
+Existe un desajuste entre la dinámica de los cambios en los sistemas naturales y la reacción del hombre ante estos cambios. Esto se debe a que los cambios en los ecosistemas tardan un tiempo en hacerse patentes, a la complejidad de la interacción entre los sistemas socioeconómico y ecológico, y a la dificultad para predecir los umbrales a los que se producirán cambios rápidos o repentinos.</p>
+<h1>¿Cómo nos afecta la pérdida de la biodiversidad?</h1>
+                          <p align="justify">La biodiversidad sustenta la salud del planeta y tiene un impacto directo en nuestras vidas. En pocas palabras, la reducción de la biodiversidad significa que millones de personas se enfrentan a un futuro en el que los suministros de alimentos son más vulnerables a las plagas y enfermedades, y donde el agua potable es un suministro irregular y corto. La salud humana está estrechamente vinculada a la salud de los ecosistemas, la diversidad biológica es un recurso del que las familias, las comunidades, las naciones y las generaciones futuras dependen. Es el enlace entre todos los organismos en la Tierra, la unión a cada uno en un ecosistema interdependiente, en el que todas las especies tienen su papel. Se trata de la red de la vida.Los recursos naturales de la Tierra están compuestos por plantas, animales, la tierra, el agua, la atmósfera y los seres humanos. Juntos, forman parte de los ecosistemas del planeta, lo que significa que si hay una crisis de la biodiversidad, nuestra salud y medios de vida estarán en riesgo también.
+
+Actualmente la humanidad está usando un 25% más recursos naturales de los que el planeta puede regenerar, como resultado; especies, hábitats y comunidades locales se encuentran ahora bajo presión o amenazas directas (por ejemplo, de la pérdida de acceso al agua potable).
+                          
+                          </p>
+                          </div>
+                          </div>
+                          <div data-role="content" align="center">
+                          <div data-role="collapsible" data-content-theme="false">
+                          <h1>Importancia de la Biodiversidad</h1>
+                          <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/DIVERSIDAD_-BIOLOGICA.jpg',1)"><img src="imagenes/Biodiversidad-300x179.jpg" width="50%" height="50%" id="Image18"></a>
+<h1>Importancia de su conservación</h1>
+                        <p align="justify">La biodiversidad, o también llamada diversidad biológica, es el concepto mediante el que se hace referencia a la gran variedad de seres vivos que existen en el Planeta, así como las variantes genéticas que se han producido por la evolución de las especies, incluso por la influencia humana en los ecosistemas. Pero la noción de biodiversidad no sólo comprende la definición de las múltiples especies que pueblan la Tierra, sino que además implica su concepción como un sistema en el cual la interacción e interdependencia entre todas ellas, supone la máxima de su importancia en sí misma. Pues para su propia pervivencia es esencial la cadena mediante la que las especies interaccionan unas con otras.Sin embargo, las actividades económicas y sociales han puesto en peligro su existencia al ritmo frenético de del desarrollo y el crecimiento de las poblaciones humanas, generando la extinción de un alto porcentaje de las especies.
+Así se reconoce su importancia socialmente en La Cumbre de la Tierra celebrada por Naciones Unidas en 1992 en Río de Janeiro, donde se subrayó por primera vez la necesidad de buscar una vía mediante la que el desarrollo humano incidiera bajo la premisa de la “sustentabilidad” para la conservación de la biodiversidad. De este modo, no sólo se reconoce la transgresión acometida por las actividades económicas y sociales de la Humanidad, sino que se plantea la imperiosa necesidad de empezar a buscar una solución intermedia que no frenara el crecimiento económico pero que tuviera las mínimas repercusiones posibles en la naturaleza.
+
+De este modo, la importancia de la biodiversidad se puede sintetizar en dos rasgos esenciales. Por un lado la biodiversidad es el fruto del trabajo de millones de años de la Naturaleza, por lo que su valor es incalculable e irremplazable. Y por otra parte, la diversidad de las especies es garantía para el funcionamiento correcto del sistema que forman los seres vivos junto con el medio en el que viven y al que contribuyen para su supervivencia.</p>        
+                          </div>
+                          </div>
+
+                          <div data-role="content" align="center">
+                          <div data-role="collapsible" data-content-theme="false">
+                          <h1>Día internacional de la Biodiversidad</h1> 
+                          <h1>22 de mayo Día internacional de la Biodiversidad</h1>
+                          <p align="justify">La diversidad biológica es el fundamento de la vida en nuestro planeta y uno de los pilares del desarrollo sostenible. La riqueza y la variedad de la vida en la Tierra hacen posibles los servicios indispensables que nos proporcionan los ecosistemas: agua potable, alimentos, cobijo, medicamentos y ropa. Los entornos de una gran diversidad biológica tienen la capacidad de regenerarse después de un desastre natural. Todo esto reviste especial importancia para los ciudadanos más pobres del mundo. Las personas que sobreviven con sólo unos dólares al día dependen de la diversidad biológica para cubrir sus necesidades básicas. Si no conservamos la diversidad biológica y hacemos un uso sostenible de ella, no lograremos cumplir los objetivos de desarrollo del Milenio.
+
+Sin embargo, la diversidad biológica está disminuyendo a un ritmo sin precedentes y ello, a su vez, menoscaba gravemente la capacidad del planeta para albergar vida. Por este motivo, los líderes mundiales que asistieron a la Cumbre Mundial sobre el Desarrollo Sostenible celebrada en Johannesburgo en 2002 se comprometieron a conseguir para 2010 una reducción importante del ritmo de pérdida de la diversidad biológica. Ese compromiso se reiteró en la Cumbre Mundial 2005. Los objetivos en materia de diversidad biológica para 2010 están ya plenamente integrados en el marco de los objetivos de desarrollo del Milenio y, en una nueva muestra de apoyo, la comunidad internacional decidió declarar el año 2010 Año Internacional de la Diversidad Biológica.
+
+A medida que la comunidad mundial presta también más atención al cambio climático, va también poniéndose de manifiesto la interrelación entre el cambio climático y la diversidad biológica. En la evaluación de los ecosistemas al iniciarse el milenio, que fue una estimación de los ecosistemas del mundo y los servicios que proporcionan, realizada aplicando las técnicas más avanzadas, se determinó que el cambio climático era una de las principales causas de la pérdida de la diversidad biológica de nuestro planeta, junto con los cambios en las modalidades de uso de la tierra. Por otra parte, en un informe publicado recientemente, el Grupo Intergubernamental de Expertos sobre el Cambio Climático dejó muy claro que el cambio climático es real y que continuará afectando a nuestra vida y a los ecosistemas durante muchos años. Una de sus consecuencias será la extinción de un número cada vez mayor de especies, que contribuirá a la degradación de algunos ecosistemas que ya de por sí son frágiles.
+
+El lema de este año para el Día Internacional de la Diversidad Biológica, “La diversidad biológica y el cambio climático”, es, por tanto, muy apropiado. Sin duda, la conservación y el uso sostenible de la diversidad biológica son elementos esenciales en toda estrategia de adaptación al cambio climático. Los manglares y otros humedales costeros constituyen un baluarte que nos protege de los fenómenos meteorológicos extremos y la elevación del nivel del mar. Ante la aridez y el calentamiento progresivos de las tierras agrícolas, la diversidad del ganado y de los cultivos de cereales podría brindar a los agricultores alternativas para adaptarse a las nuevas condiciones. Los bosques, las turberas y otros ecosistemas absorben dióxido de carbono de la atmósfera y, con ello, contribuyen a mitigar el aumento de las emisiones de gases de efecto invernadero.</p>  
+                          </div>
+                          </div>
+                          
+   <div data-role="main" class="ui-content" align="center">
+  <div style="width:30%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://www.biodiversidad.gob.mx/biodiversidad/que_es.html" data-role="button" id="beep" target="_self">
+  <h2>Más información</h2>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+ 
+                
+                       <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+                         <h4>Cuidemos al Planeta</h4>
+                         <img src="res/android/mdpi.png" width="46" height="46">
+                         <h4>Liliana Hernandez Ramos</h4>
+                         </div>
+                        </div>
+                       </div>
+                           
+                           
+                 <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+                  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+                     <h1>Conciencia Ecológica</h1>
+                       </div>
+                       
+<div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+                       <h1>¿Qué es Conciencia Ecológica?</h1>
+                       <h1 align="center">Conciencia Ecológica</h1> 
+                       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/semcra.jpg',1)"><img src="imagenes/incendio.jpg" width="50%" height="50%" id="Image19"></a>
+                       <p align="justify">Se trata de la idea de proteger los espacios naturales, que estos sean un valor fundamental para la vida y que sea el ser humano el que se comprometa a protegerlos, porque es este el responsable de los daños causados en los ecosistemas. Dicho así, la existencia de tal conciencia parece natural. Pero esta conciencia apareció en un contexto global preciso, esto es, en los países desarrollados de la OCDE (Organización para la Cooperación y el Desarrollo Económicos). Esto explica que la ecología se transformara en un asunto de debate y de reflexión internacional en la sociedad civil y en las esferas políticas.Si todos hacemos un poco, se dice, el resultado agregado será un medio ambiente más saludable para la vida humana. Otros argumentan que, en el caso de los países pobres, es una locura preocuparse por la protección y conservación de la flora y fauna que nos rodean, así como de los demás recursos naturales, pues el desarrollo económico requiere la explotación de todos estos “insumos” para generar riqueza, que eventualmente será repartida por medio del mercado y alguna ayuda del Estado (aunque no necesariamente de manera equitativa). Los que se oponen a esta visión desarrollista son llamados de manera despectiva como “eco-histéricos” o “neo-comunistas” (verdes por fuera, pero rojos por dentro).
+
+Para evitar este modelo suicida de desarrollo, lo primero que debemos comprender es su origen ideológico. ¿De dónde proviene la idea que el ser humano puede hacer lo que quiera con el planeta y los demás seres vivos que lo habitan? En el pensamiento Occidental está clara la influencia de las creencias judeo-cristianas. En el Génesis se relata que el creador mandó a los primeros seres humanos a procrearse y someter al resto de creaturas (ver Cap. 1, 26-31). De esta manera, durante siglos, se ha considerado al ser humano como el centro del Universo, al punto que se creía que el Sol giraba alrededor de la Tierra. Dicho modelo mental aún no ha sido superado, incluso en organizaciones vinculadas al desarrollo y que no profesan credo religioso. Los políticos, por supuesto, no se apartan de estas creencias y presumen al afirmar que impulsarán desde el Estado, políticas que tengan como fin primordial el bienestar del ser humano. Claro que tampoco dicen cómo repartirían los eventuales costos y los beneficios de la explotación de recursos naturales que son propiedad estatal, esto último como consecuencia del mismo modelo establecido, aunque generalmente socializan las pérdidas y privatizan las ganancias.
+
+Los pueblos indígenas han sido de los pocos que levantan su voz en contra del uso indiscriminado de ríos, lagos o montañas, y del exterminio de otros seres vivos que habitan el planeta Tierra. Han sido la conciencia en favor de la biodiversidad. Su ethos promueve la armonía con la naturaleza. En algunas comunidades q´eqchi´es de Alta Verapaz, por ejemplo, todavía se pide permiso al “espíritu de la montaña” para ir a extraer sus recursos, como la leña para cocinar. La noción de la Madre Tierra que provee el sustento diario prevalece en muchos pueblos que, por esa razón, aún mantienen un sistema de propiedad colectiva de los recursos (bosques, agua, tierras). De esta manera, los pueblos que en Occidente se consideran como los “menos civilizados” nos dan lecciones de desarrollo sostenible y equitativo.</p>  
+                       </div>
+                      </div>
+                          <div data-role="content" align="center">
+                       <div data-role="collapsible" data-content-theme="false">
+                       <h1>Los desastres ecológicos</h1> 
+                       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','imagenes/incendio.jpg',1)"><img src="imagenes/contaminacion1.jpg" width="50%" height="50%" id="Image20"></a>
+<h1 align="center">Los desastres ecológicos</h1> 
+                       <p align="center">Los movimientos contestatarios se focalizaron entonces, en el cambio económico de la sociedad, a la vez que se dieron cuenta de los daños causados en el medioambiente.
+
+En efecto, entre los años 1960 y1970 el mundo conoció un aumento  alarmante de las catástrofes ecológicas, pues se multiplicaron las mareas negras. El naufragio del petrolero norteamericano Torrey Canyon en las costas británicas y francesas en 1967, puso de relieve un peligro latente y motivó las primeras políticas públicas europeas para luchar contra él. Pero otra marea negra ocurrió en 1978, la del petrolero liberiano Amoco Cadiz, que todavía es considerado como una de las mayores catástrofes ecológicas de la historia: más de 220.000 toneladas de petróleo bruto se derramaron en 400 km de costas bretañas, en el norte de Francia. Esto, sin referirnos al naufragio de 1999 del petrolero Erika, perteneciente a la sociedad francesa Total, cuyo petróleo bruto se diseminó otra vez en las costas bretañas.
+
+Lo mismo vale para las catástrofes químicas: la explosión de la fábrica Icmesa en Seveso, Italia, en 1976, difundió una nube tóxica en los alrededores de cuatro ciudades. La explosión de una fábrica de pesticidas, filial del grupo norteamericano Union Carbide, en la ciudad indiana de Bhopal (1986) difundió otra nube tóxica que provocó la muerte directa de 3.500 personas, y más de 20 000 murieron de enfermedades en las semanas siguientes. Además, la catástrofe de Chernobyl, en 1986, puso en alerta la peligrosidad nuclear.</p>
+
+                        <h1 align="center">Derrames de petroleo</h1>  
+                        <p align="justify">Una de las mayores causas de la contaminación oceánica son los derrames de petróleo. El 46% del petróleo y sus derivados industriales que se vierten en el mar son residuos que vuelcan las ciudades costeras. El mar es empleado como un muy accesible y barato depósito de sustancias contaminantes, y la situación no cambiará mientras no existan controles estrictos, con severas sanciones para los infractores.
+El 13% de los derrames se debe a accidentes que sufren los grandes barcos contenedores de petróleo, que por negligencia de las autoridades y desinterés de las empresas petroleras transportan el combustible en condiciones inadecuadas. En los últimos años, algunos de los más espectaculares accidentes fueron el del buque-tanque Valdés de la Exxon, ocurrido frente a las costas de Alaska el 24 de marzo de 1989, y el del petrolero Mar Egeo, el 3 de diciembre de 1992, frente a la entrada del puerto de La Coruña, en España. Otro 32% de los derrames proviene del lavado de los tanques de los grandes buques que transportan este combustible.
+</p>
+                       <h1 align="center">Escapes nucleares</h1>
+                       <p align="justify">Ciertas sustancias propagan energía al desintegrarse sus átomos, y también el calor residual -persistente durante años- que generan. Ese fenómeno, conocido como radiactividad, es particularmente intenso en el caso del plutonio.
+En la actualidad, 424 centrales nucleares instaladas en 25 países producen el 16% de la electricidad mundial. Algunos países, como los Estados Unidos, presionados por el terrible accidente de Chernobyl, han anulado los proyectos de construcción de nuevas plantas nucleares.
+La explosión registrada en Chernobyl el 26 de abril de 1986 liberó gran cantidad de radiactividad. La nube que se formó se desplazó a otros países, por la acción de los vientos. La zona más contaminada comprendió unos 260.000 km2 de las ex repúblicas soviéticas de Ucrania, Rusia y Belarús, y afectó de manera directa a 2.600.000 habitantes.
+Las autoridades soviéticas sólo admitieron oficialmente 31 víctimas, pero se calcula que las emisiones radiactivas produjeron 32.000 muertos en los primeros diez años, y que 400.000 personas debieron ser desplazadas de sus lugares. La explosión del reactor nuclear provocó terribles efectos en la salud de la población: aumento de la mortalidad infantil, cáncer de tiroides, incremento de la cantidad de niños nacidos con leucemia, malformaciones, tumores y otras afecciones, que se transmitirán genéticamente. Además, el desastre causó la destrucción de cosechas enteras y la contaminación de alimentos.
+</p>  
+                       <h1 align="center">Incendios forestales</h1>
+                       <p align="justify">Anualmente el hombre desmantela cerca de 12.000.000 de hectáreas de bosque tropical. Sin embargo, esta reducción no es la única que sufren las áreas forestales de nuestro planeta; a ella debe agregarse la explotación desmedida que padecen otros tipos de bosques y la pérdida que ocasionan los incendios.
+Más de 7.000.000 de hectáreas de selvas, bosques y matorrales se destruyen anualmente por esta causa. Entre los factores que favorecen este fenómeno se encuentran las altas temperaturas, las sequías y gran falta de humedad y los vientos fuertes y secos que contribuyen a la dispersión del fuego. Lo que empieza siendo una chispa, rápidamente se convierte en un foco de fuego que avanza y no se puede detener ni controlar.
+En el modo de avance de un incendio forestal se pueden distinguir tres sectores. El nivel más alto, el del fuego que ocurre en la copa de los árboles, es decir donde están las ramas y las hojas, es el de avance más rápido y el más difícil de controlar. A nivel medio, donde crecen los arbustos, el fuego avanza menos rápidamente pero afecta no sólo a éstos sino también al estrato herbáceo -malezas y matas-. En el nivel inferior, por debajo del suelo, el avance se da a un ritmo mucho más lento, pero el daño que ocasiona el fuego cuando llega a esta parte es mayor que en cualquier otro nivel, ya que quema las raíces y carboniza el humus causando pérdidas irreparables.</p>  
+                       </div>
+                      </div>
+                      
+                      
+   <div data-role="main" class="ui-content" align="center">
+   <div style="width:30%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://kamilajimenez.blogspot.mx/" data-role="button" id="beep" target="_self">
+  <h2>Puedes consultar..</h2>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+                      
+            
+                           <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+                            <h4>Cuidemos al Planeta</h4>
+                            <img src="res/android/mdpi.png" width="46" height="46">
+                            <h4>Liliana Hernandez Ramos</h4>
+                           </div>
+                            </div>
+                           </div>
+                           
+                           
+                     <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+                      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+                           <h1>La Contaminación</h1>
+                         </div>
+                  <div data-role="content" align="center">
+                 <div data-role="collapsible" data-content-theme="false">
+                 <h1>¿Qué es contaminación?</h1> 
+                 <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','imagenes/nucle.jpg',1)"><img src="imagenes/featured-image-index.jpg" width="50%" height="50%" id="Image21"></a>
+<h1 align="center">Contaminación</h1>
+                 <p align="justify">La contaminación que se da sobre y contra el medio ambiente (que tantos los seres humanos como los animales y plantas utilizamos para vivir y desarrollarnos) se denomina contaminación ambiental, siendo la presencia en el ambiente de algún tipo de agente físico, químico o biológico o la combinación de alguno de estos, la que producirá este desequilibrio del que hablábamos más arriba y que resulta ser ampliamente nocivo para la salud, seguridad o bienestar de los habitantes de cualquier nación y por supuesto lo es también para el resto de los seres vivos, como las plantas y animales.
+La contaminación puede darse exclusivamente en el suelo, el aire o el agua, aunque también puede darse simultáneamente en estos tres ámbitos.La contaminación que se da sobre y contra el medio ambiente (que tantos los seres humanos como los animales y plantas utilizamos para vivir y desarrollarnos) se denomina contaminación ambiental, siendo la presencia en el ambiente de algún tipo de agente físico, químico o biológico o la combinación de alguno de estos, la que producirá este desequilibrio del que hablábamos más arriba y que resulta ser ampliamente nocivo para la salud, seguridad o bienestar de los habitantes de cualquier nación y por supuesto lo es también para el resto de los seres vivos, como las plantas y animales.
+</p>
+                    
+                    <div data-role="main" class="ui-content" align="center">
+  <div style="width:30%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="https://es.wikipedia.org/wiki/Contaminaci%C3%B3n" data-role="button" id="beep" target="_self">
+  <h2>Puedes consultar...</h2>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+                    </div>
+                    </div>
+                    
+                    <div data-role="content" align="center">
+                 <div data-role="collapsible" data-content-theme="false">
+                 <h1>Tipos de contaminación</h1> 
+                 
+                 <h1 align="center">Contaminación del Agua</h1>
+                 <p align="justify">La contaminación hídrica o la contaminación del agua es una modificación de esta, generalmente provocada por el ser humano, que la vuelve impropia o peligrosa para el consumo humano, la industria, la agricultura, la pesca y las actividades recreativas, así como para los animales.</p>  
+                    
+                    
+                 <h1 align="center">Contaminación del Aire</h1>
+                 <p align="justify">La contaminación del aire es una mezcla de partículas sólidas y gases en el aire. Las emisiones de los automóviles, los compuestos químicos de las fábricas, el polvo, el polen y las esporas de moho pueden estar suspendidas como partículas. ... Cuando el ozono forma la contaminación del aire también se denomina smog.</p>  
+                   
+                    
+                 <h1 align="center">Contaminación del Suelo</h1>
+                 <p align="justify">La contaminación del suelo es la introducción de sustancias extrañas a la superficie terrestre. Estos elementos perjudican de forma grave la salud de las personas, de animales y plantas. Muchas veces este tipo de contaminación entra en contacto con el agua potable de estos sitios agravando la situación.</p>  
+                   
+                    
+                 <h1 align="center">Contaminación Térmica</h1>
+                 <p align="justify"> La contaminación térmica se produce cuando un proceso altera la temperatura del medio de forma indeseada o perjudicial. El medio más habitual donde se produce es en el agua, ya que el aire se disipa más fácilmente.</p>  
+                    
+                    
+                    <h1 align="center"></h1>
+                 <p align="justify">La contaminación lumínica tiene como manifestación más evidente el aumento del brillo del cielo nocturno, por reflexión y difusión de la luz artificial en los gases y en las partículas del aire urbano (smog, contaminación...), de forma que se disminuye la visibilidad de las estrellas y demás objetos celestes.</p>
+                 
+   <div data-role="main" class="ui-content" align="center">
+  <div style="width:30%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://www.tiposdecontaminacion.com/" data-role="button" id="beep" target="_self">
+  <h2>Más Información...</h2>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>  
+                    
+   </div>
+   </div>
+   
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina7" class=" ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Las Tres RRR Ecológicas</h2>
+   </a>
+  </li>
+   
+                         
+                            <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+                            <h4>Cuidemos al Planeta</h4>
+                            <img src="res/android/mdpi.png" width="46" height="46">
+                            <h4>Liliana Hernandez Ramos</h4>
+                           </div>
+                           </div>
+                      
+                          
+                           
+                           
+                     
+                           
+                <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+                         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+                           <h1>Recursos Renovables Y Recursos no Renovables</h1>
+                         </div>
+                         <p align="justify">Se les llama recursos a todo aquello que tiene utilidad para el ser humano. Los recursos renovables son las materias primas que se convierten en algo útil para el ser humano y que es posible regenerar, es decir que no se agotan.
+
+Los recursos renovables se reponen o regeneran en un tiempo similar al periodo de vida del ser humano.
+
+Los recursos renovables pueden ser regenerados por la intervención del hombre, o porque su naturaleza es inagotable.
+</p>
+                   
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina8" class=" ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>RECURSOS RENOVABLES</h2>
+   </a>
+  </li>
+  
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina9" class=" ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>RECURSOS NO RENOVABLES</h2>
+   </a>
+  </li>
+  
+   <div data-role="main" class="ui-content" align="center">
+  <div style="width:30%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href=" http://10ejemplos.com/10-ejemplos-de-recursos-renovables" data-role="button" id="beep" target="_self">
+  <h2>Acerca de...</h2>
+  </a>
+  </li>
+  </div>
+  </div>
+  
+                     
+                           <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+                            <h4>Cuidemos al Planeta</h4>
+                            <img src="res/android/mdpi.png" width="46" height="46">
+                            <h4>Liliana Hernandez Ramos</h4>
+                           </div>
+                            </div>
+                           </div>
+                           
+                           <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="b">
+                         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+                           <h1>Las 3 RRR Ecológicas</h1>
+                         </div>
+                         
+                   <div data-role="content" align="center">
+                 <div data-role="collapsible" data-content-theme="false">
+                 <h1 align="center">¿Qué son las 3 RRR Ecológicas?</h1>
+                 <h1 align="center">Las 3 RRR Ecológicas</h1>
+                 <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('8','','imagenes/recicla.png',1)"><img src="imagenes/rrr.jpg" width="50%" height="50%" id="8"></a>
+<p align="justify">Las tres erres (3R) ecológicas es una regla para cuidar el medio ambiente, específicamente para reducir el volumen de residuos o basura generada. En pocas palabras, las 3R pretenden desarrollar hábitos de consumo responsable y te concientizan a tirar menos basura, ahorrar dinero y ser un consumidor más responsable, así reduciendo tu huella de carbono. </p>  
+                    </div>
+                    </div>
+                 <div data-role="content" align="center">
+                 <div data-role="collapsible" data-content-theme="false">
+                 <h1>¿Cuales son?</h1> 
+                  
+                 <h1 align="center">Reducir</h1>
+                 <p align="justify">Cuando hablamos de reducir lo que estamos diciendo es que se debe tratar de reducir o simplificar el consumo de los productos directos, o sea, todo aquello que se compra y se consume, ya que esto tiene una relación directa con los desperdicios, y a la vez con nuestro bolsillo. Por ejemplo, en vez de comprar 6 botellas pequeñas de una bebida, se puede conseguir una o dos grandes, teniendo la misma cantidad de producto pero menos envases, no pedir bolsas en los supermercados a menos que sea necesario, reducir el consumo de papel, etc. 
+
+Si reducimos el consumo, disminuimos el impacto en el medio ambiente. Esta R está totalmente ligada a la concientización y la educación. </p> 
+                 
+                 <h1 align="center">Reutilizar</h1>
+                 <p align="justify">Al decir reutilizar, nos estamos refiriendo a poder volver a utilizar las cosas, dándole una vida útil a embalajes o materiales que usamos día a día y darles un uso lo más prolongado posible antes de que llegue la hora de deshacernos de ellos definitivamente, disminuyendo así el volumen de la basura y reduciendo el impacto en el medio ambiente. 
+
+Por ejemplo, utilizar la cara limpia de las hojas impresas, el papel usado se puede transformar en pulpa y crear nuevas hojas para escribir, pintar o decorar, darle una nueva vida a los botes de cristal, las cajitas o frascos de PVC, metal o plástico, reutilizar la madera para hacer tus propias estanterías, pintar esa silla vieja, donar libros, aparatos eléctricos, ropa, muebles, etc. </p> 
+                 
+                 <h1 align="center">Reciclar</h1>
+                 <p align="justify">Ésta es una de las R más populares debido a que el sistema de consumo actual ha preferido usar envases de materiales reciclables (plásticos y bricks, sobre todo), pero no biodegradables. Por tanto se requiere el uso de personal y energía para someter los materiales al proceso necesario para su reutilización. Esto significa que mediante el reciclaje se reduce de forma verdaderamente significativa la utilización de nuevos materiales, y con ello, la generación de basura "nueva", sin embargo hay que recordar que al reciclar se gasta mucha energía y se contamina al reprocesar los residuos. 
+
+La mayoría de los materiales que usamos pueden ser reciclados y usados en otras aplicaciones; materiales como el vidrio, pueden reciclarse 40 veces por ejemplo, el plástico se puede reciclar calentándolo hasta que se funda dándole una nueva forma. Es nuestro compromiso reciclar lo mayor posible y disminuir la producción de basura "nueva". </p> 
+                    
+   <div data-role="main" class="ui-content" align="center">
+  <div style="width:50%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://www.ifeelmaps.com/blog/2014/07/regla-de-las-tres-erres-ecologicas--reducir--reutilizar--reciclar" data-role="button" id="beep" target="_self">
+  <h2>Consultar Fuente..</h2>
+  </a>
+  </li>
+  </div>
+  </div>
+  </div>
+    </div>
+  
+  <div data-role="main" class="ui-content" align="center">
+  <div style="width:20%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="https://youtu.be/CXAUSoVVsD0" data-role="button" id="beep" target="_self">
+  <h6>Ver video..</h6><img src="imagenes/video.PNG" width="70%" height="70%">
+  
+  </a>
+  </li>
+  </div>
+  </div>
+                     
+                           <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+                            <h4>Cuidemos al Planeta</h4>
+                            <img src="res/android/mdpi.png" width="46" height="46">
+                            <h4>Liliana Hernandez Ramos</h4>
+                           </div>
+                            </div>
+                           </div>
+                           
+                         <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="b">
+                         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+                           <h1>RECURSOS RENOVABLES</h1>
+                           
+                         </div>
+                         <h1 align="center">Definición</h1>
+                         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','imagenes/agua.jpg',1)"><img src="imagenes/viento.jpg" width="50%" height="50%" id="Image23"></a>
+<p align="justify">Un recurso renovable es un recurso natural que se puede restaurar por procesos naturales a una velocidad superior a la del consumo por los seres humanos. La radiación solar, las mareas, el viento y la energía hidroeléctrica son recursos perpetuos que no corren peligro de agotarse a largo plazo.El recurso renovable es un tipo de recurso natural que puede renovarse a partir de procesos naturales y con una rapidez mucho más elevada a la medida que el ser humano los consume, es decir, se renuevan tan velozmente que no se agotan y entonces, los hombres pueden hacer uso de ellos siempre.
+  
+  Cabe destacarse que un recurso natural es aquel bien que nos ofrece la naturaleza y que como tal no presenta ningún tipo de intervención humana. Los recursos naturales son extendidamente valorados por ello y porque contribuyen ciertamente al bienestar y el desarrollo de diferentes productos necesarios para la vida.
+</p>
+                      <h1 align="center">Tipos de Recursos Renovables</h1>
+                      <h2 align="center">El agua</h2>
+                      <p align="justify">Se trata de un recurso natural presente en todo el planeta y que se puede renovar gracias a sus ciclos naturales, como la lluvia y los distintos movimientos de masas de agua (glaciares, océanos, mares, lagos, ríos, etc.).</p>
+                      
+                   <h2 align="center">Recursos forestales</h2>
+                      <p align="justify">Los bosques son un recurso renovable que nos proporciona maderas resinas y otros productos forestales. Estos se renuevan cada cierto tiempo de manera natural pero su proceso es muy lento por lo que deben de ser protegidos de la explotación excesiva. Además, es un recurso que puede ser recuperado por la mano del hombre sembrando más áreas boscosas, ayudando de esta manera a la regeneración que realiza la naturaleza.</p>
+                      
+                      <h2 align="center">Energía Solar</h2>
+                      <p align="justify">Se trata de un recurso renovable toda vez que la radiación lumínica proveniente del sol, es prácticamente inagotable para nosotros. Así también el calor producto de la radiación térmica emitida por el sol.
+</p>
+                      
+                      <h2 align="center">Energía Eólica</h2>
+                      <p align="justify">Esta fuente de energía es un recurso inagotable que se renueva constantemente ya que el clima global permite que siempre exista el viento que es la fuente que permite generar la energía eléctrica a partir del viento.</p>
+                      
+                      <h2 align="center">La energía hidroeléctrica</h2>
+                      <p align="justify">Se trata de un recurso que nos proporciona energía eléctrica permitiéndonos su generación por medio de la fuerza de ríos, lagos y mareas. Este recurso se renueva de manera natural gracias al suministro de agua causado por las lluvias.</p>
+                                 
+   
+  
+   <div data-role="main" class="ui-content" align="center">
+  <div style="width:20%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://10ejemplos.com/10-ejemplos-de-recursos-renovables" data-role="button" id="beep" target="_self">
+  <h3>Fuente...</h3>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  
+                     
+                           <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+                            <h4>Cuidemos al Planeta</h4>
+                            <img src="res/android/mdpi.png" width="46" height="46">
+                            <h4>Liliana Hernandez Ramos</h4>
+                           </div>
+                            </div>
+                           </div>
+                           
+                           <div data-role="page" id="Pagina9" data-add-back-btn="true" data-theme="b">
+                         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+                           <h1>RECURSOS NO RENOVABLES</h1>
+                         </div>
+                         <h1 align="center">Definición</h1>
+                         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','imagenes/petroleo.jpg',1)"><img src="imagenes/luz.jpg" width="50%" height="50%" id="Image24"></a>
+<p align="justify">Los recursos no renovables son todos aquellos recursos de la naturaleza que no pueden ser producidos ni renovados una vez se agoten. Normalmente este tipo de recursos  se encuentran en cantidades específicas y se agotan con más facilidad  que lo que tarda la naturaleza en producirlos.
+  
+  Para poder producirse este tipo de recursos se necesitarían millones de años una vez agotados. Para la humanidad los recursos no renovables son de mucha importancia ya que de ellos dependen muchas actividades industriales como la generación de energía eléctrica por medio del agua, algunos materiales que se utilizan en la construcción y otros que son utilizados como  combustible tal es el caso del petróleo.</p>
+                         
+                         <h1 align="center">Tipos de recursos no Renovables</h1>
+                         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','imagenes/petroleo.jpg',1)"><img src="imagenes/nucle.jpg" width="50%" height="50%" id="Image25"></a>
+<h2 align="center"> Combustibles fósiles</h2>
+                      <p align="justify">Son todos los recursos que son el producto de las alteraciones a las que a través del tiempo ha sido expuesta la biomasa y que contienen una carga energética. Los más importantes son los tres elementos más valiosos hasta ahora para la humanidad: el petróleo, el carbón y el gas natural.</p>
+                      
+                      <h2 align="center">Energía Nuclear</h2>
+                      <p align="justify">Este tipo de recursos no suele verse con gran frecuencia ya que su extracción y transformación es de alto costo, además que son elementos de alto riesgo y peligrosidad para quienes los manipulan. Uno de los recursos no renovables más claros en esta categoría fue en la creación de las bombas nucleares utilizadas para el ataque de la segunda guerra mundial a las islas de Hiroshima y Nagasaki.</p>
+                      
+                      <h2 align="center">Gas natural</h2>
+                      <p align="justify">Combustible de origen fósil, que es una mezclad e hidrocarburos ligeros compuestos principalmente por metano, nitrógeno, dióxido de carbono y etano. Se localiza en el subsuelo o bajo el mar, y debe pasar por una doble transformación desde su extracción hasta su posibilidad de uso efectivo.</p>
+                      
+                      <h2 align="center">Petróleo</h2>
+                      <p align="justify">Compuesto orgánico presente en diferentes yacimientos, cuya formación lleva cientos de millones de años. Luego de extraído, debe ser separado del gas y del agua por medio del proceso conocido como refinado.</p>
+                      
+                      <h2 align="center">Carbón</h2>
+                      <p align="justify">Mineral de origen orgánico, constituido fundamentalmente por carbono. También lleva millones de años, y su uso energético se realiza en las centrales térmicas o termoeléctricas para generar electricidad: su vapor pueda alcanzar una temperatura cercana a los 600°C</p>
+                   
+   
+  
+   <div data-role="main" class="ui-content" align="center">
+  <div style="width:20%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://10ejemplos.com/10-ejemplos-de-recursos-no-renovables" data-role="button" id="beep" target="_self">
+  <h2>Fuente...</h2>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  
+  
+                     
+                           <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+                            <h4>Cuidemos al Planeta</h4>
+                            <img src="res/android/mdpi.png" width="46" height="46">
+                            <h4>Liliana Hernandez Ramos</h4>
+                           </div>
+                            </div>
+                           </div>
+                           
+                           
+ <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+                    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+                      <h1>Elaborado por:</h1>
+                    </div>
+                  <div>
+                      
+                <h1 align="center"> NOMBRE:</h1>
+                <h2 align="center">Liliana Hernández Ramos</h2>
+                
+                <h1 align="center"> GRADO Y GRUPO:</h1>
+                <h2 align="center">4°"E"</h2>
+                
+                <h1 align="center">ESPECIALIDAD:</h1>
+                <h2 align="center">Programación</h2>
+                
+                <h1 align="center">SUBMÓDULO:</h1>
+                <h2 align="center">DESARROLLA APLICACIONES MÓVILES</h2>
+                
+                <h1 align="center"> DOCENTE:</h1>
+                <h2 align="center">Lic. José Antonio Gómez Hernández</h2>
+                 </div>
+
+           
+     <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+         <h4>Cuidemos el Planeta</h4>
+        <div><img src="res/android/mdpi.png" width="46" height="46"></div>
+         <h4>Liliana Hernandez Ramos</h4>
+               </div>
+                   </div>
+                    </div>
+               
+                       
+</head>
+ 
+</body>
+</html>
